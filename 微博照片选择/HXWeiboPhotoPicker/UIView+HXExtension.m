@@ -114,6 +114,7 @@
     HXCustomNavigationController *nav = [[HXCustomNavigationController alloc] initWithRootViewController:vc];
     nav.isCamera = YES;
     nav.supportRotation = manager.configuration.supportRotation;
+    nav.modalPresentationStyle = manager.configuration.hxCameraModalPresentationStyle;
     [self.viewController presentViewController:nav animated:YES completion:nil];
 }
 

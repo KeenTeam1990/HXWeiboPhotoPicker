@@ -375,4 +375,8 @@ typedef enum : NSUInteger {
  */
 @property (copy, nonatomic) void(^previewCollectionView)(UICollectionView *collectionView);
 
+/**
+默认相机转场风格
+*/
+@property(nonatomic,assign) UIModalPresentationStyle hxCameraModalPresentationStyle;
 @end

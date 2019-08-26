@@ -312,6 +312,7 @@ static NSString *HXPhotoSubViewCellId = @"photoSubViewCellId";
                 HXCustomNavigationController *nav = [[HXCustomNavigationController alloc] initWithRootViewController:vc];
                 nav.isCamera = YES;
                 nav.supportRotation = weakSelf.manager.configuration.supportRotation;
+                nav.modalPresentationStyle = weakSelf.manager.configuration.hxCameraModalPresentationStyle;
                 [[weakSelf viewController] presentViewController:nav animated:YES completion:nil];
             }else {
                 UIAlertController *alert = [UIAlertController alertControllerWithTitle:[NSBundle hx_localizedStringForKey:@"无法使用相机"] message:[NSBundle hx_localizedStringForKey:@"请在设置-隐私-相机中允许访问相机"] preferredStyle:UIAlertControllerStyleAlert];
